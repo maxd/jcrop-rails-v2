@@ -28,12 +28,12 @@ if [ $# -ne 1 ] ; then
 fi
 
 if [ ! -d $jc_dir ]; then
-  info "Jcrop not found. Cloning to tmp/jcrop..."
-  git clone --quiet git://github.com/tapmodo/Jcrop.git tmp/jcrop
+  info "Jcrop not found. Cloning to $jc_dir..."
+  git clone --quiet git://github.com/tapmodo/Jcrop.git $jc_dir
 fi
 
 info "Using $1..."
-cd tmp/jcrop
+cd $jc_dir
 git checkout --quiet "$1"
 cd ../../
 
