@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Maxim Dobryakov"]
   spec.email         = ["maxim.dobryakov@gmail.com"]
   spec.description   = %q{Jcrop asset bundle for Rails}
-  spec.summary       = %q{Jcrop asset bundle for Rails}
+  spec.summary       = %q{Jcrop asset bundle for Rails 3.2.x/4.0.x}
   spec.homepage      = "https://github.com/maxd/jcrop-rails-v2"
   spec.license       = "MIT"
 
