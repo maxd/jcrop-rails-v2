@@ -34,6 +34,7 @@ fi
 
 info "Using $1..."
 cd $jc_dir
+git fetch origin master
 git checkout --quiet "$1"
 cd ../../
 
