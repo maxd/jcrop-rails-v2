@@ -59,6 +59,6 @@ info "Apply patches..."
 mv "$jc_stylesheets_dir/jquery.Jcrop.css" "$jc_stylesheets_dir/jquery.Jcrop.css.erb"
 mv "$jc_stylesheets_dir/jquery.Jcrop.min.css" "$jc_stylesheets_dir/jquery.Jcrop.min.css.erb"
 
-ruby -i -pe 'gsub /url\("?(.+?)"?\)/, %q(url(<%= asset_url("\1") %>))' "$jc_stylesheets_dir/jquery.Jcrop.css.erb" "$jc_stylesheets_dir/jquery.Jcrop.min.css.erb"
+ruby -i -pe 'gsub /url\("?(.+?)"?\)/, %q(url(<%= asset_path("\1") %>))' "$jc_stylesheets_dir/jquery.Jcrop.css.erb" "$jc_stylesheets_dir/jquery.Jcrop.min.css.erb"
 
 success "Done"
