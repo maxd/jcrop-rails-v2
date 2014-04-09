@@ -21,7 +21,7 @@ Add single line to 'application.css':
 
 ```
 /*
- * require jquery.Jcrop
+ *= require jquery.Jcrop
  */
 ```
 
