@@ -35,6 +35,8 @@ That's all. Now you can use Jcrop inside your application.
 
 > If you want to use minified JS & CSS versions of Jcrop then just replace `jquery.Jcrop` to `jquery.Jcrop.min` in code snippets provided above.
 
+> In case you are using an older version of the sprockets-rails gem (2.1.0 or lower) you might need to add ```//= depend_on_asset "Jcrop.gif"``` at the top of jquery.Jcrop.css.erb
+
 ### In-place integration
 
 If you want to use Jcrop in specified views only you can include its use the following commands:
